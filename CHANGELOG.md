@@ -1,5 +1,19 @@
 # Changelog
 
+## [3.0.0](https://github.com/kakkar2/create-dxkit/compare/v2.0.5...v3.0.0) (2026-10-12)
+
+### ⚠ BREAKING CHANGES
+
+* the cn-util option no longer exists
+
+### Features
+
+* remove cn() utility ([ef9c60a](https://github.com/kakkar2/create-dxkit/commit/ef9c60ad6d56a09eeaa3e52b72da2c714b7c1d24))
+
+### Bug Fixes
+
+* make generated hooks work in projects without eslint or type module ([04cc1d1](https://github.com/kakkar2/create-dxkit/commit/04cc1d1b07c5d25e191e06bc5c050ee631045bfd))
+
 All notable changes are documented here.
 
 ## [2.0.5](https://github.com/kakkar2/create-prodkit/compare/v2.0.4...v2.0.5) (2026-07-03)
