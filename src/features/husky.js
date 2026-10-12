@@ -5,7 +5,7 @@ import { runStep } from "../utils/runStep.js";
 
 export async function setupHusky({ targetDir, huskyHooks }) {
   await runStep("Setting up Husky hooks...", async () => {
-    await execa("npx", ["husky", "init"], { cwd: targetDir, stdio: "pipe" });
+    await fs.ensureDir(path.join(targetDir, ".husky"));
 
     if (huskyHooks.includes("pre-commit")) {
       const hookPath = path.join(targetDir, ".husky", "pre-commit");
@@ -18,9 +18,11 @@ export async function setupHusky({ targetDir, huskyHooks }) {
       await fs.outputFile(hookPath, "npx --no -- commitlint --edit $1\n");
       // commitlint config — uses conventional commit rules
       await fs.outputFile(
-        path.join(targetDir, "commitlint.config.js"),
+        path.join(targetDir, "commitlint.config.mjs"),
         `export default { extends: ['@commitlint/config-conventional'] }\n`,
       );
     }
+
+    await execa("npx", ["husky"], { cwd: targetDir, stdio: "pipe" });
   });
 }

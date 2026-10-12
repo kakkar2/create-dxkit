@@ -7,4 +7,7 @@ if (process.platform === "win32") {
   process.stdout.write("\u001b]0;\u001b\\"); // reset terminal title
 }
 
-run();
+run().catch((err) => {
+  console.error(err.message);
+  process.exit(1);
+});

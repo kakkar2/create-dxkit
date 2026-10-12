@@ -20,7 +20,6 @@ export async function setupReleaseIt(targetDir) {
         "@release-it/conventional-changelog": {
           preset: "conventionalcommits",
           infile: "CHANGELOG.md",
-          header: "# Changelog\n\nAll notable changes are documented here.\n",
         },
       },
     };

@@ -58,5 +58,5 @@ export async function run() {
     process.exit(0);
   });
 
-  program.parse();
+  await program.parseAsync();
 }
