@@ -1,5 +1,7 @@
 # Changelog
 
+## [3.0.1](https://github.com/kakkar2/create-dxkit/compare/v3.0.0...v3.0.1) (2026-10-12)
+
 ## [3.0.0](https://github.com/kakkar2/create-dxkit/compare/v2.0.5...v3.0.0) (2026-10-12)
 
 ### ⚠ BREAKING CHANGES

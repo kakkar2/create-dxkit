@@ -1,6 +1,6 @@
 {
   "name": "create-dxkit",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "CLI to add production-ready DX tooling to any project — Husky, commitlint, release-it and Prettier in one command.",
   "main": "src/cli.js",
   "bin": {
