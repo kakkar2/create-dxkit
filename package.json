@@ -1,10 +1,10 @@
 {
-  "name": "create-prodkit",
+  "name": "create-dxkit",
   "version": "2.0.5",
   "description": "CLI to add production-ready DX tooling to any project — Husky, commitlint, release-it and Prettier in one command.",
   "main": "src/cli.js",
   "bin": {
-    "create-prodkit": "bin/index.js"
+    "create-dxkit": "bin/index.js"
   },
   "type": "module",
   "files": [
@@ -47,11 +47,11 @@
   "author": "Lalit Kakkar <lalitkakkar50@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kakkar2/create-prodkit.git"
+    "url": "git+https://github.com/kakkar2/create-dxkit.git"
   },
-  "homepage": "https://github.com/kakkar2/create-prodkit#readme",
+  "homepage": "https://github.com/kakkar2/create-dxkit#readme",
   "bugs": {
-    "url": "https://github.com/kakkar2/create-prodkit/issues"
+    "url": "https://github.com/kakkar2/create-dxkit/issues"
   },
   "dependencies": {
     "commander": "^12.1.0",

@@ -1,4 +1,4 @@
-# create-prodkit
+# create-dxkit
 
 A CLI that adds production-ready DX tooling to any existing project in one command — Husky, commitlint, release-it, and Prettier. Works with Next.js, Vite, Express, or any Node.js project.
 
@@ -7,7 +7,7 @@ A CLI that adds production-ready DX tooling to any existing project in one comma
 Run inside any existing project:
 
 ```bash
-npx create-prodkit init
+npx create-dxkit init
 ```
 
 It detects your package manager automatically, asks what you want, and sets everything up in one shot.
@@ -73,7 +73,7 @@ Also adds:
 
 ## Writing better changelogs
 
-create-prodkit uses conventional commits to auto-generate your CHANGELOG. The more descriptive your commits, the richer your changelog entries.
+create-dxkit uses conventional commits to auto-generate your CHANGELOG. The more descriptive your commits, the richer your changelog entries.
 
 Conventional commits support an optional body for full context:
 

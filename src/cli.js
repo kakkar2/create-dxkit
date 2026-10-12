@@ -11,7 +11,7 @@ const program = new Command();
 
 export async function run() {
   program
-    .name("create-prodkit")
+    .name("create-dxkit")
     .description("Add production-ready DX tooling to any project")
     .version(version);
 
@@ -23,7 +23,7 @@ export async function run() {
     .option("-y, --yes", "skip prompts and use all defaults")
     .action(async (cmdOptions) => {
       console.log();
-      console.log(pc.bold(pc.cyan("  >> create-prodkit")));
+      console.log(pc.bold(pc.cyan("  >> create-dxkit")));
       console.log(pc.dim("  Production-ready DX tooling for any project\n"));
 
       try {
@@ -47,10 +47,10 @@ export async function run() {
   // show usage hint if no subcommand given
   program.action(() => {
     console.log();
-    console.log(pc.bold(pc.cyan("  >> create-prodkit")));
+    console.log(pc.bold(pc.cyan("  >> create-dxkit")));
     console.log(pc.dim("  Production-ready DX tooling for any project\n"));
     console.log(pc.white("  Run inside your project folder:"));
-    console.log(pc.bold(pc.green("    npx create-prodkit init\n")));
+    console.log(pc.bold(pc.green("    npx create-dxkit init\n")));
   });
 
   process.on("SIGINT", () => {

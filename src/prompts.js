@@ -9,7 +9,7 @@ export async function getInitOptions(skipPrompts = false) {
   const hasPkg = await fs.pathExists(path.join(cwd, "package.json"));
   if (!hasPkg) {
     throw new Error(
-      "No package.json found. Run create-prodkit init inside an existing project.",
+      "No package.json found. Run create-dxkit init inside an existing project.",
     );
   }
 
