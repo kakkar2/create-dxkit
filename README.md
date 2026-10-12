@@ -20,7 +20,6 @@ It detects your package manager automatically, asks what you want, and sets ever
 | commitlint        | Enforces conventional commit format on every commit |
 | release-it        | Semantic versioning + auto-generated CHANGELOG.md   |
 | Prettier + ESLint | Formatter config with import sorting                |
-| cn() utility      | clsx + tailwind-merge helper for Tailwind projects  |
 
 ## Feature details
 
@@ -71,21 +70,6 @@ Also adds:
 - `.prettierignore` — excludes `node_modules`, `dist`, `build`, `.next`, `coverage`
 - `format` and `format:check` scripts to `package.json`
 - `prettier` added to your ESLint extends if `.eslintrc.json` is found
-
-### cn() utility
-
-Optional — for Tailwind CSS projects only. Installs `clsx` and `tailwind-merge` and creates a `cn()` helper:
-
-```ts
-import { cn } from '@/lib/utils'
-
-<div className={cn('px-4 py-2', isActive && 'bg-blue-500', 'text-sm')} />
-```
-
-Automatically detects:
-
-- TypeScript vs JavaScript — generates `utils.ts` or `utils.js`
-- `src/` layout vs root layout — places file in the right `lib/` folder
 
 ## Writing better changelogs
 

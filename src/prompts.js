@@ -69,11 +69,6 @@ export async function getInitOptions(skipPrompts = false) {
           value: "prettier",
           checked: true,
         },
-        {
-          name: "cn() utility (clsx + tailwind-merge)",
-          value: "cn-util",
-          checked: false,
-        },
       ],
       validate: (input) => input.length > 0 || "Select at least one feature",
     },

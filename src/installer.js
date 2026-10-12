@@ -2,12 +2,7 @@ import { execa } from "execa";
 import path from "path";
 import fs from "fs-extra";
 import { logger } from "./utils/logger.js";
-import {
-  setupPrettier,
-  setupReleaseIt,
-  setupHusky,
-  setupTailwindUtils,
-} from "./features/index.js";
+import { setupPrettier, setupReleaseIt, setupHusky } from "./features/index.js";
 import { runStep } from "./utils/runStep.js";
 import { modifyPackageJson } from "./utils/modifyPackageJson.js";
 
@@ -49,10 +44,6 @@ export async function installFeatures(options) {
 
   if (features.includes("prettier")) {
     await setupPrettier(targetDir);
-  }
-
-  if (features.includes("cn-util")) {
-    await setupTailwindUtils(targetDir);
   }
 
   logger.success("All done! Your project is production-ready.\n");
